@@ -1,6 +1,7 @@
 <script setup>
 import PartOne from './components/PartOne.vue'
 import PartTwo from './components/PartTwo.vue'
+import PartThree from './components/PartThree.vue'
 </script>
 
 <template>
@@ -9,6 +10,7 @@ import PartTwo from './components/PartTwo.vue'
     <section>
       <PartOne />
       <PartTwo />
+      <PartThree />
     </section>
   </main>
 </template>
