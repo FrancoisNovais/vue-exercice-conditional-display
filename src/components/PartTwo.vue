@@ -10,8 +10,13 @@ const handleLike = () => {
 
 <template>
   <div>
-    <font-awesome-icon v-if="!isLiked" @click="handleLike" :icon="['fas', 'thumbs-up']" />
-    <font-awesome-icon class="dislike" v-else @click="handleLike" :icon="['fas', 'thumbs-down']" />
+    <font-awesome-icon v-show="!isLiked" @click="handleLike" :icon="['fas', 'thumbs-up']" />
+    <font-awesome-icon
+      class="dislike"
+      v-show="isLiked"
+      @click="handleLike"
+      :icon="['fas', 'thumbs-down']"
+    />
   </div>
 </template>
 

@@ -43,7 +43,35 @@ const usersList = ref([
 </template>
 
 <style scoped>
+div {
+  display: flex;
+  gap: 30px;
+}
+
+div > div {
+  display: flex;
+  align-items: center;
+  border: 1px solid black;
+  padding: 20px;
+  border-radius: 20px;
+  width: 300px;
+}
+div > div > div {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 15px;
+  border: none;
+  padding: 0;
+}
+
 img {
-  width: 250px;
+  width: 110px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 15px;
+}
+svg {
+  font-size: 130px;
 }
 </style>
