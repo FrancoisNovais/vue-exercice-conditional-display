@@ -31,7 +31,7 @@ const usersList = ref([
 <template>
   <div>
     <div v-for="user in usersList" :key="user.id">
-      <img v-if="user.account.premium === true" :src="user.account.avatar.url" alt="" />
+      <img v-if="user.account.avatar" :src="user.account.avatar.url" alt="" />
       <font-awesome-icon v-else :icon="['fas', 'user']" />
       <div>
         <p>{{ user.firstname }}</p>
