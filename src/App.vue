@@ -29,10 +29,7 @@ h1 {
   font-size: 40px;
   font-weight: bold;
 }
-h2 {
-  color: #ff7f50;
-  font-weight: bold;
-}
+
 section {
   display: flex;
   flex-direction: column;
