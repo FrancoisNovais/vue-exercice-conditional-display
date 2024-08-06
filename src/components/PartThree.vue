@@ -19,6 +19,9 @@ const handleAddCoin = (add) => {
     <div>
       <button @click="handleAddCoin(1)">Ajouter 1€</button>
       <button @click="handleAddCoin(5)">Ajouter 5€</button>
+      <!-- Autre fsolution sans function handleAddCoin -->
+      <!-- <button @click="counter += 1">Ajouter 1 €</button> -->
+      <!-- <button @click="counter += 5">Ajouter 5 €</button> -->
     </div>
   </div>
 </template>
