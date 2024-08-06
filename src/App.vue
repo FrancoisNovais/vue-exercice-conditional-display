@@ -17,4 +17,23 @@ import PartFour from './components/PartFour.vue'
   </main>
 </template>
 
-<style scoped></style>
+<style scoped>
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+}
+h1 {
+  margin-top: 40px;
+  font-size: 40px;
+  font-weight: bold;
+}
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1;
+  justify-content: space-evenly;
+}
+</style>
