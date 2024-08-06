@@ -4,11 +4,7 @@ import { ref } from 'vue'
 const isConnected = ref(false)
 
 const handleConnection = () => {
-  if (isConnected.value === true) {
-    isConnected.value = false
-  } else {
-    isConnected.value = true
-  }
+  isConnected.value = !isConnected.value
 }
 </script>
 

@@ -4,11 +4,7 @@ import { ref } from 'vue'
 const isLiked = ref(false)
 
 const handleLike = () => {
-  if (isLiked.value === true) {
-    isLiked.value = false
-  } else {
-    isLiked.value = true
-  }
+  isLiked.value = !isLiked.value
 }
 </script>
 
